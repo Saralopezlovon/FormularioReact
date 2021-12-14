@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 class Card extends Component {
   render() {
-    const info = this.props.data
-    
+    //Aqui se reciben las props que el padre ha pasado como "data" que es el this.state
+    const info = this.props.data    
     return <div>
       <p>{info.name}</p>
       <p>{info.email}</p>

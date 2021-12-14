@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 
-class Form extends Component {  
-
-    
-
+//Componente hijo1 que recogerá los datos de un formulario
+class Form extends Component {      
+    //LLamar a la función por props y se pasan los parámetros que ya han sido recogidos del formulario y son variables.
     handleSubmit = (event) =>{
         event.preventDefault();
         const name = event.target.elements.name.value
         const email = event.target.elements.email.value
         const picture = event.target.elements.picture.value
         const age = event.target.elements.age.value
-        this.props.setInfo(name,email, picture,age) //Aqui el hijo para al padre como parametro los valores del formulario a través de una función
+        this.props.setInfo(name,email, picture,age)
     }
 
 
